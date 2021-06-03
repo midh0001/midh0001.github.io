@@ -7,8 +7,6 @@
 </head>
 
 <body>
-<h1>Reggie's Coffee Shop</h1>
-    Welcome to our shop
     <!--
         This is a HTML comment
         command + / to add/remove a comment 
@@ -23,16 +21,28 @@
         command + shift + right arrow keys to select to the end of the line
         alt + left+right arrow keys to jump per word
         alt + shift + left+right arrow keys to select per word
-
+        alt + up-down arrow keys to move line of code around
     -->
 <!-- Site header -->
 <header>
     <h1>Reggie's Coffee Shop</h1>
+    <!-- Adding a navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 </header>
 <!-- Main content of the page -->
 <main>
+    <!-- adding on page link -->
+    <a href="#treatofweak">Treat Of The Weak</a>
+
     <article>
         <h2>Our Story </h2>
+        <!-- Adding image -->
+        <img src="images/coffee-shop.jpg" alt="Coffee Cup On Pile Of Coffee Beans">
             <p>
                 We are a <em>family owned business</em>. Reggie is the <abbr title="Chief Executive Officer">CEO</abbr> and head barista of the shop. Maria is the pastry chef and is in-charge of the bake shop. Celebrating their 10<sup>th</sup> anniversary together in December 2021.
 
@@ -69,7 +79,7 @@
         </ol>
     </section>
     <!-- adding section for the description list -->
-    <section>
+    <section id="treatofweak">
         <h3>Treat Of The Weak</h3>
         <dl>
             <dt>Name</dt>
@@ -92,6 +102,8 @@
             </dd>
          
         </dl>
+        <!-- adding an external link -->
+        <a href="https://www.allrecipes.com/recipe/20144/banana-banana-bread/" target="_blank">Get the recipe! </a>
     </section>
 </main>
 <!-- Site footer -->
