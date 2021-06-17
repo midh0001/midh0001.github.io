@@ -11,4 +11,6 @@ footer {
 #my-image {
     box-shadow: 0 0 2px 1px black;
 }
-
+.list {
+    list-style-type: upper-latin;
+}
