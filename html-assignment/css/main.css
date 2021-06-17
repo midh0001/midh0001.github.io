@@ -1,4 +1,5 @@
 body {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
 }
 header,
@@ -12,5 +13,28 @@ footer {
     box-shadow: 0 0 2px 1px black;
 }
 .list {
-    list-style-type: upper-latin;
+    list-style-type: square;
+}
+.list li:nth-child(2n+1) {
+    background-color: cornflowerblue;
+}
+
+.nav li {
+    list-style: none;
+}
+.nav a {
+    color: darkslateblue;
+    text-decoration: none;
+    background-color:rgb(216, 200, 53);
+    border: 1px solid black;
+}
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background-color: chartreuse;
+    box-shadow: -1px 1px 2px 1px black;
+}
+nav ul a:hover,
+nav ul a:focus {
+    background-color: coral;
 }
