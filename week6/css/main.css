@@ -40,16 +40,29 @@ nav ul a {
 #treatofweek {
     /* color image repeat position-x position-y / size */
     background: orange url(../images/bread.jpg) no-repeat center center;
-    color: darkkhaki;
+    color: mintcream;
+    font-size: 1.25rem;
+    /* 1em = 20px */
+    padding: 1em;
+    /* viewport based units vh and vw */
+    /* height: 100vh; */
+
+    /* % based on parent container width */
+    width: 50%;
 
 /* Selecting elements with class value */
 .orange-link { 
     background-color: darkslategray;
     color: orange;
     text-decoration: none;
+    
+}
+
+html {
+    font-size: 10px;
 }
 .large-text {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 /* Child selector or direct child selector */
