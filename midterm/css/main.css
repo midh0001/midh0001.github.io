@@ -55,4 +55,31 @@ body {
 	margin: 0 auto;
 	color: black;
 	font-family: Arial, Helvetica, sans-serif;
+	background-color: #aad4cf;
+}
+/* defining container class */
+.container {
+	max-width: 960px;
+	padding: 1px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	background-color: rgb(204, 255, 255);
+}
+/* defining h1 */
+h1 {
+	padding: 80px;
+	padding-top: 250px;
+	font-size: 48px;
+	color: white;
+	text-align: center;
+}
+
+/* defining the image container class */
+.imagecontainer {
+	padding-top: 10px;
+	padding-right: 50px;
+	margin: 0 auto;
+	line-height: 20px;
+	font-size: 1em;
+	width: 100%;
 }
