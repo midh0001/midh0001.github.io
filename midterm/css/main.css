@@ -54,6 +54,7 @@ body {
 	width: 90%;
 	margin: 0 auto;
 	color: black;
+	line-height: 1.5;
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: #aad4cf;
 }
@@ -100,6 +101,7 @@ nav ul li:first-child {
 .lifestarfish {
 	width: 250px;
 	font-size: 2em;
+	font-weight: 500;
 	line-height: 50px;
 	padding-left: 10px;
 	padding-top: 25px;
@@ -123,3 +125,34 @@ nav ul li:first-child {
 	background-repeat: no;
 	background-position: center;
 }
+
+/* adding float to middle image */
+#lonestarfish {
+	float: left;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	width: 250px;
+	height: 250px;
+}
+
+/* defining h3 class */
+h3 {
+	margin-top: 50px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+/* adding decoration to list */
+ul li {
+	display: list-item;
+	font-size: 16px;
+	padding-left: 10px;
+	list-style-type: disc;
+	list-style-position: inside;
+	line-height: 1;
+}
+
