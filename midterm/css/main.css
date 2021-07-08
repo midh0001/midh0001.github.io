@@ -65,13 +65,45 @@ body {
 	margin-bottom: 20px;
 	background-color: rgb(204, 255, 255);
 }
-/* defining h1 */
-h1 {
+/* defining h1 class */
+.siteheader {
 	padding: 80px;
 	padding-top: 250px;
-	font-size: 48px;
+	font-size: 4em;
 	color: white;
 	text-align: center;
+}
+
+/* defining the navigation list */
+nav ul li {
+	width: 33%;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 33px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0px;
+	border-left: 2px solid black;
+}
+/* removing text decoration from nav links */
+nav ul a {
+	color: inherit;
+	text-decoration: none;
+}
+/* removing border from first child */
+nav ul li:first-child {
+	border: none
+}
+/* defining h2 class */
+.lifestarfish {
+	width: 250px;
+	font-size: 2em;
+	line-height: 50px;
+	padding-left: 10px;
+	padding-top: 25px;
+
 }
 
 /* defining the image container class */
@@ -82,4 +114,12 @@ h1 {
 	line-height: 20px;
 	font-size: 1em;
 	width: 100%;
+}
+/* setting the image */
+
+.image {
+	background-image: url(../images/lone-starfish-wide.jpg);
+	background-size: cover;
+	background-repeat: no;
+	background-position: center;
 }
