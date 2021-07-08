@@ -48,4 +48,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* container for the body content */
+.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 1px;
+		background-color: rgb(212, 233, 231);
+}
