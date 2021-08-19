@@ -58,6 +58,7 @@ html {
     font-family: 'Open Sans', sans-serif ;
     font-size: 14px;
 }
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -93,52 +94,124 @@ p{
 
 a,
 a:link,
-a:visited{
-    color: inherit;
+a:visited {
+    display: flex;
+    color: #c78c06;
+    text-decoration: none;
 }
 
-/* navigation sec */
+a:hover,
+a:focus {
+    background-color: #c78c06;
+    color: #222;
+}
+
+
+/*-------------------------- navigation sec --------------*/
 
 .nav{
     background-color: #222;
     color: #c78c06;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 1em;
 }
+.nav img{
+    display: flex;
+    width: 60px;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited{
+    display: flex;
+    padding: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav i{
+    background-color: #222;
+    color: #c78c06;
+    border: 1px solid #c78c06;
+    padding: 20%;
+}
+
+button{
+    background-color: transparent;
+    align-items: flex-end;
+    border: none;
+}
+
+.search{
+    display: flex;
+}
+
+/* ---------------- banner and welcome sections ------------------- */
+
 
 .banner{
+    display: flex;
     background-image: url(../images/main-banner.jpg);
-    padding: 2em 0;
+    background-size: cover;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
 }
 .welcome{
-    max-width: 1200px;
     color:white;
     font-size: 12px;
     line-height: 1.5em;
     background-color: #222;
     opacity: 0.8;
+    padding-left: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.btn.connect{
-    padding: 1.5em;
-    font-size: 16px;
-    background-color: #c78c06;
+.welcome h1{
+    font-size: 5em;
+    line-height: 1.5;
 }
+
+.connect{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 2em;
+    border: solid #222;
+}
+
+/* --------------------------------- about section ------------------------------------- */
+
 
 .about{
     background-color: #ffe6ac;
 }
+
+.about-content{
+    padding: 1em;
+    line-height: 1.25;
+}
+
+.about img{
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+/* ---------------------------- our services section ---------------------------------- */
 
 .digital,
 .marketing,
 .video,
 .web,
 .print{
-    background-color: #ffe6ac;
+    background-color:#ffe6ac;
 }
 
-.btn.services{
+.services a{
     padding: 1.5em;
     background-color: #222;
     color: white;
