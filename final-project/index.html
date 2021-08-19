@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
+    <title>Three Star Media</title>
+    <!-- adding font before stylesheet so it can load -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Red+Hat+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <!-- end of fonts -->
     <!-- adding icon fonts link -->
     <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
     <!-- custom styles link -->
@@ -12,190 +20,239 @@
 </head>
 
 <body>
-    <header>
+    <div class="container">
+        <header>
         <!-- adding nav + search form + icon -->
-        <div class="nav">
-            <nav>
+            <nav class="nav">
+            
                 <ul>
-                <li><img src="images/logo.png" alt="our logo"></li>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Team</li>
-                <li>Contact</li>
-                <li><input type="text" placeholder="Search"> <i class="im im-magnifier"></i></li>
+                    <li><img src="images/logo.png" alt="our logo"></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <!-- 
+                    add label for the input**
+                    add button around the i tag**
+                    add form tag around the label, input and button**
+                -->
+                    <li>
+                        <form class="search">
+                            <input type="text" placeholder="Search"> 
+                            <button type="submit"><i class="im im-magnifier"></i></button>
+                        </form>
+                    </li>
                 </ul>
+            
             </nav>
-        </div>
         <!-- adding banner and welcome sections  -->
 
-        <div class="banner">
-
+        <section class="banner">
             <div class="welcome">
-            <h1>Welcome to Three Star Media</h1>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
-            <p>
-                <button class="btn connect">Connect with us <i class="im im-care-right"></i></button>
-            </p>
-
+                <h1>Welcome to Three Star Media</h1>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+                <!-- line48, replace the button with the anchor tag** -->
+                <a href="#">Connect with us <i class="im im-care-right"></i></a>
             </div>
-        </div>
-    </header>
-    
-</body>
-<!-- adding content of website -->
+        </section>
+        </header>
+    <!-- adding content of website -->
 
-<main>
-    <div id="about">
-        <img src="images/about-us.jpg" alt="About Us">
-            <div class="section content">
-                <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-                    </p> 
-                    <p>    
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </p>
-            </div>  
-    </div>
-<!-- adding services section -->
-    <div id="services">
-        <div class="services">
-            <h2>Our Services</h2>
-        </div>
-        <div class="digital">
-            <img src="images/digital.jpg" alt="Digital Transformation">
-            <h3>Digital Transformation</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>
-                <button class="btn services">Digital Plans <i class="im im-care-right"></i></button>
-            </p>
-        </div>
-        <div class="marketing">
-            <img src="images/marketing.jpg" alt="Marketing">
-            <h3>Marketing</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            <p>
-                <button class="btn services">Marketing Plans <i class="im im-care-right"></i></button>
-            </p>
-        </div>
-        <div class="video">
-            <img src="images/video.jpg" alt="Video Production">
-            <h3>Video Production</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            <p>
-                <button class="btn services">Video Plans <i class="im im-care-right"></i></button>
-            </p>
-        </div>
-        <div class="web">
-            <img src="images/web.jpg" alt="Web Development">
-            <h3>Web Development</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-            </p>
-            <p>
-                <button class="btn services">Web Plans <i class="im im-care-right"></i></button>
-            </p>
-        </div>
-
-        <div class="print">
-            <img src="images/print.jpg" alt="Print">
-            <h3>Print</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                
-            </p>
-            <p>
-                <button class="btn services">Print Plans <i class="im im-care-right"></i></button>
-            </p>
-        </div>
-    </div>
-
-    <div class="banner2">
-        <div class="vision">
-            <h3>Our Vision</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <main>
+            <section class="about">
+                <div class="about-content">
+                    <img src="images/about-us.jpg" alt="About Us">
+                    <div class="section content">
+                        <h2>About Us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.
                         
-                </p>
-                    <p>
-                        <button class="btn vision">Learn More <i class="im im-care-right"></i></button>
+                        </p>
+                        <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum."
+                        </p>
+                    </div>
+                </div>   
+            </section>
+        <!-- adding services section -->
+        <!-- line83, switch the div with section** -->
+            <section class="services">
+                <h2>Our Services</h2>
+
+                <div class="digital">
+                <img src="images/digital.jpg" alt="Digital Transformation">
+                <h3>Digital Transformation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <!-- remove the p around the button and replace button with anchor tag** -->
+                
+                <a href="#">Digital Plans <i class="im im-care-right"></i></a>
+                
+                </div>
+                <div class="marketing">
+                    <img src="images/marketing.jpg" alt="Marketing">
+                    <h3>Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. </p>
+                
+                    <a href="#">Marketing Plans <i class="im im-care-right"></i></a>
+                
+                </div>
+                <div class="video">
+                    <img src="images/video.jpg" alt="Video Production">
+                    <h3>Video Production</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. </p>
+                
+                    <a href="#">Video Plans <i class="im im-care-right"></i></a>
+                
+                </div>
+                <div class="web">
+                    <img src="images/web.jpg" alt="Web Development">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+
                     </p>
+               
+                    <a href="#">Web Plans <i class="im im-care-right"></i></a>
+                </div>
 
-        </div>
-    </div>
-<!-- adding Our Team section -->
-    <div id="team">
-        <div class="ourteam">
-            <h2>Our Team</h2>
-            <img src="images/john.jpg" alt="John Doe, CEO and Co-owner">
-            <div class="johndoe">
-                <h3>John Doe</h3>
-                <h4>CEO and Co-owner</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <div class="print">
+                <img src="images/print.jpg" alt="Print">
+                <h3>Print</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+
                 </p>
-            </div>
-            <img src="images/bob.jpg" alt="Bob Rite, CFO and Co-owner">
-            <div class="bobrite">
-                <h3>Bob Rite</h3>
-                <h4>CFO and Co-owner</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
+                
+                <a href="#">Print Plans <i class="im im-care-right"></i></a>
+                
+                </div>
+            </section>
+
+            <section class="banner2">
+                <div class="vision">
+                    <h3>Our Vision</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+
+                    </p>
+                
+                    <a href="#">Learn More <i class="im im-care-right"></i></a>
+                
+
+                </div>
+            </section>
+        <!-- adding Our Team section -->
+            <section id="team">
+                <div class="ourteam">
+                    <h2>Our Team</h2>
+                    <img src="images/john.jpg" alt="John Doe, CEO and Co-owner">
+                    <div class="johndoe">
+                    <h3>John Doe</h3>
+                    <h4>CEO and Co-owner</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    </div>
+                    <img src="images/bob.jpg" alt="Bob Rite, CFO and Co-owner">
+                    <div class="bobrite">
+                    <h3>Bob Rite</h3>
+                    <h4>CFO and Co-owner</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    </div>
+                </div>
+            </section>
+        <!-- adding contact us section -->
+            <section class="contact">
+                <div class="contact">
+                    <div class="contactheading">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <div class="form">
+                        <h3>Send us a message</h3>
+                        <form action="get" class="contact-form">
+                            <div>
+                            <label for="name">Full Name</label>
+                            <input type="text" name="name" id="name">
+                            </div>
+                            <div>
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email">
+                            </div>
+                            <div>
+                            <label for="message">Message</label>
+                            <input type="text" name="message" id="message">
+                            </div>
+                            <!-- leave the button for the form -->
+                            <button type="button" class="btn send">Send</button>    
+                        </form>
+                    </div>
+                    <div class="hours">
+                        <h3>Hours of operation</h3>
+                        <table>
+                        <!-- add thead around the first row -->
+                            <thead>
+                            <tr>
+                            <th>Days</th>
+                            <th>Hours</th>
+                            </tr>
+                            </thead>
+                        <!-- add tbody around the next two rows -->
+                            <tbody>
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9 AM - 6 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="location">
+                    <h3>Location</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4865.1096813085105!2d-75.76041109309281!3d45.34936761819759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1628141340041!5m2!1sen!2sca"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div><!-- closing location -->
+                </div><!-- closing contact -->
+            </section>
+        </main>
+  
+    <!-- adding footer to website -->
+        <footer>
+        <div class="footer">
+            <p>&copy; Copyright Three Star Media, 2020 </p>
+            <p>All images are taken from <a href="url">Unsplash</a></p>
         </div>
-    </div>
-<!-- adding contact us section -->
-    <div id="contact">
-        <div class="contact2">
-            <div class="contactheading">
-                <h2>Contact Us</h2>
-            </div>
-            <div class="form">
-                <h3>Send us a message</h3>
-                <form>
-                    <label for="name">Full Name</label>
-                    <input type="text" name="name" id="name">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
-                    <label for="message">Message</label>
-                    <input type="text" name="message" id="message">
-                    <button class="btn send">Send</button>
-                </form>
-            </div>
-            <div class="hours">
-                <h3>Hours of operation</h3>
-                <table>
-                    <tr>
-                        <th>Days</th>
-                        <th>Hours</th>
-                    </tr>
-                    <tr>
-                        <td>Monday - Friday</td>
-                        <td>9 AM - 6 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday - Sunday</td>
-                        <td>Closed</td>
-                    </tr>
-                </table>
-            </div>
+        </footer>
+    </div> <!-- closing container -->
+</body>
 
-            <div class="location">
-                <h3>Location</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4865.1096813085105!2d-75.76041109309281!3d45.34936761819759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1628141340041!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </div>
-
-</main>
-
-<!-- adding footer to website -->
-<footer>
-    <div class="footer">
-        <p>&copy; Copyright Three Star Media, 2020 </p>
-        <p>All images are taken from <a href="url">Unsplash</a></p>
-    </div>
-</footer>
 </html>
